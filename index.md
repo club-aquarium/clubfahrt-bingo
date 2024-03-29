@@ -17,9 +17,9 @@ JavaScript is needed for this site to work.
 ```
 
 ```{=html5}
-<p class="js center">
+<div class="js center">
   <div id="bingo"></div>
-</p>
+</div>
 ```
 
 To generate a new bingo card click [here](.).
