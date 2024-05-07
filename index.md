@@ -22,7 +22,7 @@ JavaScript is needed for this site to work.
 </div>
 ```
 
-To generate a new bingo card click [here](.).
+To generate a new bingo card click [here](#).
 
 ## Source Code
 
