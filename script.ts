@@ -34,16 +34,30 @@ function guess_rectangle_dimensions(n: number): [number, number] {
 	return [x, y]
 }
 
-function generate_fragment(columns: number, rows: number) {
+function generate_fragment(columns: number, rows: number, center?: string) {
+	let i_center = -1
 	const indexes = []
 	for(let i = items.length; i-- > 0;) {
-		indexes.push(i)
+		if(items[i] == center) {
+			i_center = i
+		} else {
+			indexes.push(i)
+		}
+	}
+	if(i_center >= 0 && (columns != rows || rows % 2 == 0)) {
+		indexes.push(i_center)
 	}
 	const picks = []
 	for(let i = columns * rows; i-- > 0;) {
 		const j = Math.floor(Math.random() * indexes.length)
+		let k
+		if(i_center >= 0 && i == columns * Math.floor(rows / 2) + Math.floor(columns / 2)) {
+			k = i_center
+		} else {
+			k = indexes.splice(j, 1)[0]
+		}
 		picks.push({
-			item: indexes.splice(j, 1)[0],
+			item: k,
 			checked: false,
 		})
 	}
