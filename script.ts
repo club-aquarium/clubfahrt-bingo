@@ -90,12 +90,16 @@ function fragment_changed(_?: Event) {
 	if(picks == null) {
 		let columns = 5
 		let rows = 5
-		const m = location.hash.match(/^#(\d+)x(\d+)$/)
+		let center: string|undefined = undefined
+		const m = location.hash.match(/^#(\d+)x(\d+)(?::(.*))?$/)
 		if(m !== null) {
 			columns = parseInt(m[1])
 			rows = parseInt(m[2])
+			if(m[3] !== undefined) {
+				center = decodeURIComponent(m[3].replace(/\+/g, "%20"))
+			}
 		}
-		generate_fragment(columns, rows)
+		generate_fragment(columns, rows, center)
 	} else {
 		update_bingo(picks)
 	}
