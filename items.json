@@ -25,7 +25,7 @@
     , "Poolunfall"
     , "Polizei-/RTW-Einsatz"
     , "Caro erzählt vom Krieg"
-    , "jemand redet über \"Früher(TM)\""
+    , "jemand redet über \"früher\u2122\""
     , "Diskussion über Chlor im Pool"
     , "etwas dummes mit Feuerholz"
     , "Zitat: \"Wie könnt ihr jetzt schon wieder trinken?\""
@@ -78,5 +78,6 @@
     , "Emülü kommt spontan doch nicht mit"
     , "Benjamin ist pissig, weil ein Witz auf seine Kosten gemacht wird."
     , "Patricia friert"
+    , "Erik erzählt von der Clubfahrt nach Doksy"
     ]
 }
