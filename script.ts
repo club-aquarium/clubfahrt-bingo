@@ -88,7 +88,14 @@ function parse_fragment(fragment: string): Pick[]|null {
 function fragment_changed(_?: Event) {
 	const picks = parse_fragment(location.hash)
 	if(picks == null) {
-		generate_fragment(5, 5)
+		let columns = 5
+		let rows = 5
+		const m = location.hash.match(/^#(\d+)x(\d+)$/)
+		if(m !== null) {
+			columns = parseInt(m[1])
+			rows = parseInt(m[2])
+		}
+		generate_fragment(columns, rows)
 	} else {
 		update_bingo(picks)
 	}
