@@ -16,6 +16,7 @@ body.nojs .js {
 	display: grid;
 	max-width: unquote("min(90vw, 90vh)");
 	margin: 0 auto;
+	hyphens: auto;
 
 	&, & > * {
 		border-right: var(--border);

@@ -1,16 +1,16 @@
 ---
-title: Clubfahrt Bingo
+title: Clubfahrt-Bingo
 ...
 
-# Clubfahrt Bingo
+# Clubfahrt-Bingo
 
 ```{=html5}
 <div class="nojs error">
 ```
 
-## Error
+## Fehler
 
-JavaScript is needed for this site to work.
+Für dieses Seite wird JavaScript benötigt.
 
 ```{=html5}
 </div>
@@ -22,11 +22,11 @@ JavaScript is needed for this site to work.
 </p>
 ```
 
-To generate a new bingo card click [here](#).
+[Hier](#) klicken, um eine neues Bingofeld zu generieren.
 
-## Source Code
+## Quellcode
 
-The source code can be found at <https://github.com/club-aquarium/clubfahrt-bingo/>.
+Der Quellcode befindet sich hier: <https://github.com/club-aquarium/clubfahrt-bingo/>
 
 ```{=html5}
 <div id="popup"></div>
