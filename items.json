@@ -63,7 +63,7 @@
     , "Ronja ist betrunken"
     , "irgendwas mit Till und Kreuzfahrt"
     , "Gregor isst weirden Scheiß"
-    , "Gregor isst Fleisch, \"weils ja sonst wegkommt\""
+    , "Gregor isst Fleisch, \"weil's ja sonst wegkommt\""
     , "Benjamin und/oder Lukas saufen einen Kasten PU am Tag"
     , "kein PU mehr da"
     , "jemand macht \"Mittagsschlaf\""
@@ -81,5 +81,6 @@
     , "Schwarzer Steiger ist vorm PU alle"
     , "PU ist vorm Schwarzen Steiger alle"
     , "Benjamin wäre lieber nicht mitgefahren"
+    , "Kein Internet aufm Klo"
     ]
 }
