@@ -1,0 +1,18 @@
+on:
+  push:
+    branch: master
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: cachix/install-nix-action@v31
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+    - run: ./publish.sh
+      env:
+        # https://github.com/actions/checkout?tab=readme-ov-file#push-a-commit-using-the-built-in-token
+        GIT_AUTHOR_NAME: github-actions[bot]
+        GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        GIT_COMMITTER_NAME: github-actions[bot]
+        GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
