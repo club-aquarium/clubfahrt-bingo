@@ -3,9 +3,9 @@
   stdenvNoCC,
   fetchurl,
   esbuild,
-  nodePackages,
   pandoc,
   sassc,
+  typescript,
 }:
 
 stdenvNoCC.mkDerivation {
@@ -24,9 +24,9 @@ stdenvNoCC.mkDerivation {
 
   nativeBuildInputs = [
     esbuild
-    nodePackages.typescript
     pandoc
     sassc
+    typescript
   ];
 
   installPhase = ''
